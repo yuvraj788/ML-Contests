@@ -24,7 +24,7 @@ ROC AUC and Log Loss are two important metrics used to evaluate the performance 
 ### Implemented the following algorithms
 **Random Forest** uses bagging (Bootstrap Aggregating), building multiple decision trees independently on random subsets of data and features, then aggregating results (majority vote or average). This reduces variance and improves generalization.
 
-**XGBoost** uses gradient boosting, building trees sequentially, where each new tree corrects errors from the previous ones. It minimizes a loss function using gradient descent, making it more focused on reducing bias and variance simultaneously.
+**XGBoost** XGBoost uses decision trees as its base learners and combines them sequentially to improve the model’s performance. Each new tree is trained to correct the errors made by the previous tree and this process is called boosting.
 
 ## Model Performance Results
 
