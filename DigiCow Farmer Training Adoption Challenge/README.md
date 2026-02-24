@@ -26,9 +26,9 @@ ROC AUC and Log Loss are two important metrics used to evaluate the performance 
 
 **XGBoost** uses gradient boosting, building trees sequentially, where each new tree corrects errors from the previous ones. It minimizes a loss function using gradient descent, making it more focused on reducing bias and variance simultaneously.
 
-## 📊 Model Performance Results
+## Model Performance Results
 
-### 🔹 adopted_within_07_days
+###  adopted_within_07_days
 
 XGBoost:
 - AUC: 0.9198
@@ -39,7 +39,7 @@ Random Forest:
 - LogLoss: 0.0424
 
 
-### 🔹 adopted_within_90_days
+###  adopted_within_90_days
 
 XGBoost:
 - AUC: 0.9425
@@ -50,7 +50,7 @@ Random Forest:
 - LogLoss: 0.0578
 
 
-### 🔹 adopted_within_120_days
+###  adopted_within_120_days
 
 XGBoost:
 - AUC: 0.8921
@@ -61,7 +61,7 @@ Random Forest:
 - LogLoss: 0.0796
 
 
-## 🏆 Final Model Selection
+## Final Model Selection
 
 **XGBoost** was selected for final submission because it achieved:
 
