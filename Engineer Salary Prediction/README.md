@@ -1,6 +1,6 @@
 # Engineers Salary Prediction (ML Competition - Bitgrit)
 
-## 1. Problem Statement
+##  Problem Statement
 
 The goal of this project is to build a machine learning model that predicts the salary category of engineering jobs in the United States. The salary is classified into three categories:
 
@@ -14,7 +14,7 @@ This project is part of the Bitgrit Machine Learning Competition, where particip
 
 ---
 
-## 2. Dataset Description
+##  Dataset Description
 
 The dataset used in this project was provided as part of the competition in the file:
 
@@ -45,32 +45,7 @@ The dataset contains both categorical and numerical features along with high-dim
 
 ---
 
-## 3. Data Preprocessing
-
-The following preprocessing steps were applied:
-
-- Handling missing values:
-  - `feature_10` filled with median and scaled
-  - `job_state` filled with mode
-  - `job_posted_date` filled and converted to datetime
-
-- Feature Engineering:
-  - Extracted `job_posted_month` and `job_posted_year`
-  - Grouped rare categories in `feature_1`
-
-- Encoding:
-  - Label Encoding applied to categorical variables
-  - Combined train + test encoding to handle unseen categories :contentReference[oaicite:1]{index=1}  
-
-- Feature Scaling:
-  - StandardScaler used for Logistic Regression
-
-- Train-Test Split:
-  - 80% training, 20% validation
-
----
-
-## 4. Evaluation Metrics
+##  Evaluation Metrics
 
 The model performance was evaluated using the following metrics:
 
@@ -90,7 +65,7 @@ From the classification reports, models were evaluated on all these metrics for 
 
 ---
 
-## 5. Models Used
+##  Models Used
 
 ### 1. Logistic Regression
 A linear model used for classification. It works by estimating probabilities using a logistic function. It is simple, fast, and works well for linearly separable data.
@@ -112,7 +87,7 @@ A fast gradient boosting framework that uses histogram-based learning. It is opt
 
 ---
 
-## 6. Model Performance Comparison
+##  Model Performance Comparison
 
 | Model               | Accuracy |
 |--------------------|----------|
@@ -127,7 +102,7 @@ The comparison clearly shows that boosting models outperform traditional models.
 
 ---
 
-## 7. Best Model
+##  Best Model
 
 The best performing model based on validation accuracy:
 
@@ -137,7 +112,7 @@ However, CatBoost was also used for final submission due to its stability and st
 
 ---
 
-## 8. Final Submission
+##  Final Submission
 
 - Predictions generated on `test.csv`
 - Submission file created in required format:
